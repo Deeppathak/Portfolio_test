@@ -7,10 +7,10 @@ class CustomNavbar extends HTMLElement {
           position: fixed;
           top: 0; left: 0; right: 0;
           z-index: 1000;
-          background: rgba(13, 17, 23, 0.9);
-          backdrop-filter: blur(10px);
+          background: rgba(13, 17, 23, 0.85); /* Dark theme translucent */
+          backdrop-filter: blur(12px);
           border-bottom: 1px solid #30363d;
-          padding: 1.25rem 0;
+          padding: 1rem 0;
         }
         .container {
           max-width: 900px;
@@ -25,6 +25,7 @@ class CustomNavbar extends HTMLElement {
           text-decoration: none;
           font-weight: 700;
           font-family: 'JetBrains Mono', monospace;
+          font-size: 1.2rem;
         }
         .links {
           display: flex;
