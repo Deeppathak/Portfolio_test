@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // 1. Typewriter Effect
+    // Cycles through your requested skills while keeping "Enthusiast" static in index.html
     new Typed('#typewriter', {
         strings: [
             'Mechanical Engineer', 
@@ -17,19 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // 2. Particle Network Effect (Reference Style)
     particlesJS('particles-js', {
         "particles": {
-            "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+            "number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
             "color": { "value": "#58a6ff" },
-            "shape": { "type": "circle" },
-            "opacity": { "value": 0.2 },
+            "opacity": { "value": 0.3 },
             "size": { "value": 2 },
             "line_linked": {
                 "enable": true,
                 "distance": 150,
                 "color": "#58a6ff",
-                "opacity": 0.1,
+                "opacity": 0.15,
                 "width": 1
             },
-            "move": { "enable": true, "speed": 1 }
+            "move": { "enable": true, "speed": 1.5 }
         },
         "interactivity": {
             "events": { "onhover": { "enable": true, "mode": "grab" } }
@@ -37,5 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
         "retina_detect": true
     });
 
-    feather.replace();
+    // Initialize Feather Icons
+    if (window.feather) {
+        feather.replace();
+    }
 });
