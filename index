@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Pathak | Systems & Mechanical Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgDark: '#0d1117',
+                        cardDark: '#161b22',
+                        borderDark: '#30363d',
+                        accent: '#58a6ff',
+                        textMain: '#c9d1d9',
+                        textMuted: '#8b949e'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bgDark text-textMain font-sans antialiased">
+    <div id="particles-js" class="fixed inset-0 z-0 pointer-events-none"></div>
+    
+    <custom-navbar></custom-navbar>
+
+    <main class="relative z-10 max-w-4xl mx-auto px-6 pt-32">
+        <section class="py-20 border-b border-borderDark">
+            <h1 class="text-5xl font-bold text-white mb-6 tracking-tight">Deep Pathak</h1>
+            <div class="text-2xl text-textMuted h-12">
+                <span id="typewriter"></span> Enthusiast
+            </div>
+            <div class="flex gap-4 mt-8">
+                <a href="mailto:pathakdeep31@gmail.com" class="text-sm font-mono border border-borderDark hover:border-accent px-4 py-2 rounded transition-colors">Email</a>
+                <a href="https://www.linkedin.com/in/deep-pathak-502918175/" target="_blank" class="text-sm font-mono border border-borderDark hover:border-accent px-4 py-2 rounded transition-colors">LinkedIn</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 border-b border-borderDark">
+            <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-8">Professional Profile</h2>
+            <ul class="space-y-6 text-textMuted leading-relaxed">
+                <li class="flex gap-4">
+                    <span class="text-accent">▹</span>
+                    <span>3 years of hands-on experience in mechanical product development, specializing in 3D CAD design, tolerance analysis, DFA/DFMEA, and rapid design iteration for medium-voltage switchgear systems, achieving up to 15% reduction in design cycle time.</span>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-accent">▹</span>
+                    <span>Collaborating with the engineering team at Nuventura to optimize circuit breaker and drive assemblies; identified and resolved critical late-stage design faults, preventing potential losses of approximately €100,000 and improving product reliability by 20%.</span>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-accent">▹</span>
+                    <span>Leading vibration-based reliability evaluation in my Master’s thesis, applying FFT and PSD analysis to detect structural looseness in switchgear, resulting in quantified improvements in component endurance and fatigue life.</span>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-accent">▹</span>
+                    <span>Silver Medalist in Mechanical Engineering (GPA 9.4/10); pursuing a Master’s in Systems Engineering (German grade 2.0), with strong focus on system-level thinking and cross-functional collaboration.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects" class="py-16">
+            <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-12">Projects</h2>
+            <div class="grid grid-cols-1 gap-6">
+                <div class="group border border-borderDark p-6 rounded-lg hover:bg-cardDark transition-all">
+                    <h3 class="text-xl font-bold text-white group-hover:text-accent mb-2">Wheel Trolley Bracket FEA</h3>
+                    <p class="text-textMuted text-sm mb-4">Static and fatigue analyses to identify failure causes under 500kg load.</p>
+                    <div class="flex gap-2">
+                        <span class="text-xs font-mono px-2 py-1 bg-gray-800 rounded">ANSYS</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-gray-800 rounded">FEA</span>
+                    </div>
+                </div>
+                <div class="group border border-borderDark p-6 rounded-lg hover:bg-cardDark transition-all">
+                    <h3 class="text-xl font-bold text-white group-hover:text-accent mb-2">Embedded Air Quality System</h3>
+                    <p class="text-textMuted text-sm mb-4">Monitoring PM1.0, PM2.5, and PM10.0 using data-driven sensor integration.</p>
+                    <div class="flex gap-2">
+                        <span class="text-xs font-mono px-2 py-1 bg-gray-800 rounded">Embedded Systems</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-gray-800 rounded">Python</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 border-t border-borderDark mb-20 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
+            <p class="text-textMuted mb-8">Currently open to opportunities in Systems Engineering and Mechanical Design.</p>
+            <a href="mailto:pathakdeep31@gmail.com" class="inline-block bg-white text-bgDark px-8 py-3 rounded font-bold hover:bg-accent hover:text-white transition-all">Say Hello</a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
