@@ -32,65 +32,114 @@
     <custom-navbar></custom-navbar>
 
     <main class="relative z-10 max-w-4xl mx-auto px-6 pt-32">
-        <section class="py-20 border-b border-borderDark">
+        <section id="hero" class="py-20 border-b border-borderDark">
             <h1 class="text-5xl font-bold text-white mb-6 tracking-tight">Deep Pathak</h1>
-            <div class="text-2xl text-textMuted h-12">
+            <div class="text-2xl text-textMuted h-12 font-mono">
                 <span id="typewriter"></span> Enthusiast
-            </div>
-            <div class="flex gap-4 mt-8">
-                <a href="mailto:pathakdeep31@gmail.com" class="text-sm font-mono border border-borderDark hover:border-accent px-4 py-2 rounded transition-colors">Email</a>
-                <a href="https://www.linkedin.com/in/deep-pathak-502918175/" target="_blank" class="text-sm font-mono border border-borderDark hover:border-accent px-4 py-2 rounded transition-colors">LinkedIn</a>
             </div>
         </section>
 
         <section id="about" class="py-16 border-b border-borderDark">
-            <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-8">Professional Profile</h2>
+            <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-8">Professional Summary</h2>
             <ul class="space-y-6 text-textMuted leading-relaxed">
                 <li class="flex gap-4">
                     <span class="text-accent">▹</span>
-                    <span>3 years of hands-on experience in mechanical product development, specializing in 3D CAD design, tolerance analysis, DFA/DFMEA, and rapid design iteration for medium-voltage switchgear systems, achieving up to 15% reduction in design cycle time.</span>
+                    <span>3 years of hands-on experience in mechanical product development (CAD, DFA/DFMEA), achieving up to 15% reduction in design cycle time.</span>
                 </li>
                 <li class="flex gap-4">
                     <span class="text-accent">▹</span>
-                    <span>Collaborating with the engineering team at Nuventura to optimize circuit breaker and drive assemblies; identified and resolved critical late-stage design faults, preventing potential losses of approximately €100,000 and improving product reliability by 20%.</span>
+                    <span>Optimizing circuit breaker and drive assemblies at <strong>Nuventura</strong>; resolved critical design faults preventing €100,000 in potential losses.</span>
                 </li>
                 <li class="flex gap-4">
                     <span class="text-accent">▹</span>
-                    <span>Leading vibration-based reliability evaluation in my Master’s thesis, applying FFT and PSD analysis to detect structural looseness in switchgear, resulting in quantified improvements in component endurance and fatigue life.</span>
-                </li>
-                <li class="flex gap-4">
-                    <span class="text-accent">▹</span>
-                    <span>Silver Medalist in Mechanical Engineering (GPA 9.4/10); pursuing a Master’s in Systems Engineering (German grade 2.0), with strong focus on system-level thinking and cross-functional collaboration.</span>
+                    <span>Specializing in vibration-based reliability using FFT and PSD analysis for switchgear endurance.</span>
                 </li>
             </ul>
         </section>
 
-        <section id="projects" class="py-16">
-            <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-12">Projects</h2>
-            <div class="grid grid-cols-1 gap-6">
-                <div class="group border border-borderDark p-6 rounded-lg hover:bg-cardDark transition-all">
-                    <h3 class="text-xl font-bold text-white group-hover:text-accent mb-2">Wheel Trolley Bracket FEA</h3>
-                    <p class="text-textMuted text-sm mb-4">Static and fatigue analyses to identify failure causes under 500kg load.</p>
-                    <div class="flex gap-2">
-                        <span class="text-xs font-mono px-2 py-1 bg-gray-800 rounded">ANSYS</span>
-                        <span class="text-xs font-mono px-2 py-1 bg-gray-800 rounded">FEA</span>
+        <section id="education" class="py-16 border-b border-borderDark">
+            <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-10">Education</h2>
+            <div class="space-y-8">
+                <div>
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-bold text-white">M.Sc. in Systems Engineering</h3>
+                        <span class="text-sm font-mono text-textMuted">Current</span>
+                    </div>
+                    <p class="text-accent">HTW Berlin, Germany</p>
+                    <p class="text-sm text-textMuted mt-1">Grade: 2.0 (German Scale)</p>
+                </div>
+                <div>
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-bold text-white">B.E. in Mechanical Engineering</h3>
+                        <span class="text-sm font-mono text-textMuted">Silver Medalist</span>
+                    </div>
+                    <p class="text-accent">Gujarat Technological University</p>
+                    <p class="text-sm text-textMuted mt-1">GPA: 9.4/10.0</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-16 border-b border-borderDark">
+            <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-10">Technical Toolkit</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                        <i data-feather="box" class="w-4 h-4"></i> CAD & Design
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">SolidWorks</span>
+                        <span class="skill-tag">Autodesk Inventor</span>
+                        <span class="skill-tag">CATIA</span>
+                        <span class="skill-tag">Tolerance Analysis</span>
                     </div>
                 </div>
-                <div class="group border border-borderDark p-6 rounded-lg hover:bg-cardDark transition-all">
-                    <h3 class="text-xl font-bold text-white group-hover:text-accent mb-2">Embedded Air Quality System</h3>
-                    <p class="text-textMuted text-sm mb-4">Monitoring PM1.0, PM2.5, and PM10.0 using data-driven sensor integration.</p>
-                    <div class="flex gap-2">
-                        <span class="text-xs font-mono px-2 py-1 bg-gray-800 rounded">Embedded Systems</span>
-                        <span class="text-xs font-mono px-2 py-1 bg-gray-800 rounded">Python</span>
+                <div>
+                    <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                        <i data-feather="activity" class="w-4 h-4"></i> FEA & Analysis
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">ANSYS</span>
+                        <span class="skill-tag">Vibration Analysis</span>
+                        <span class="skill-tag">FFT/PSD</span>
+                        <span class="skill-tag">DFMEA</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                        <i data-feather="code" class="w-4 h-4"></i> Programming
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Embedded C</span>
+                        <span class="skill-tag">MATLAB</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                        <i data-feather="tool" class="w-4 h-4"></i> Fabrication
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">3D Printing</span>
+                        <span class="skill-tag">Rapid Prototyping</span>
+                        <span class="skill-tag">DFA</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-16 border-t border-borderDark mb-20 text-center">
-            <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
-            <p class="text-textMuted mb-8">Currently open to opportunities in Systems Engineering and Mechanical Design.</p>
-            <a href="mailto:pathakdeep31@gmail.com" class="inline-block bg-white text-bgDark px-8 py-3 rounded font-bold hover:bg-accent hover:text-white transition-all">Say Hello</a>
+        <section id="projects" class="py-16">
+            <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 gap-6">
+                <div class="project-card">
+                    <h3 class="text-xl font-bold text-white mb-2">Wheel Trolley Bracket FEA</h3>
+                    <p class="text-textMuted text-sm">Quantified structural endurance and identified stress points under critical loading.</p>
+                </div>
+                <div class="project-card">
+                    <h3 class="text-xl font-bold text-white mb-2">Air Quality System</h3>
+                    <p class="text-textMuted text-sm">Embedded sensor network for real-time PM monitoring.</p>
+                </div>
+            </div>
         </section>
     </main>
 
